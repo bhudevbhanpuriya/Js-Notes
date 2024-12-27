@@ -36,10 +36,29 @@ const add = (n1,n2) => {
     return n1+n2
 }
 
-console.log(add(5,2));
+// console.log(add(5,2));
 
 // we can also omitt curly braces and return for single line inside the arrow fun
 
 const mul = (n1,n2) => n1*n2
-console.log(mul(3,4));
+// console.log(mul(3,4));
 
+
+// Immediately innvoked functions expressions (IIFE)
+
+// (pura function)(empty brackets);
+
+(function greet (){
+    console.log("db connected");
+})();
+
+//arrow functions can also be used
+
+(() => {
+    console.log("db connected inside arrow");
+})();
+
+
+((name) => {
+    console.log(`Hello, ${name}!`);
+})("Remiss");
